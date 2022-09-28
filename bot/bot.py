@@ -36,7 +36,7 @@ async def get_prefix(bot, message):
 
 
 # Changing Bot Presense
-activity = nextcord.Game(name=f"Please interact with  me!")
+activity = nextcord.Game(name=f"Bink's Sake")
 
 # Intents
 intents = nextcord.Intents.default()

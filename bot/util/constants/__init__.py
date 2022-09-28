@@ -33,15 +33,15 @@ log = logging.getLogger(__name__)
 
 
 class Client(NamedTuple):
-    name = "Nextcord Template Bot"
-    default_prefix = "t!"
+    name = "BrookBot!"
+    default_prefix = "b!"
     guild_id = 932264473408966656
     test_guild_id = 866235308416040971
     version = environ.get("GIT_SHA", "master")[:7]
-    bot_version = "4.0.1"
+    bot_version = "2.0"
     token = environ.get("BOT_TOKEN")
     debug = environ.get("BOT_DEBUG", "true").lower() == "true"
-    github_bot_repo = "https://github.com/abindent/Nextcord-Utility-Bot"
+    github_bot_repo = "https://github.com/WerG0D/BrookBot"
     invite_permissions = nextcord.Permissions(
         view_channel=True,
         send_messages=True,
@@ -223,7 +223,7 @@ class Colours:
 class Database:
     connection_url = environ.get("MONGO_URI")
     mongo = motor.motor_asyncio.AsyncIOMotorClient(str(connection_url))
-    db = mongo["pythonbot"]
+    db = mongo["Brook"]
 
 
 class Emojis:
